@@ -3,6 +3,12 @@ import './App.css';
 function App() {
   return (
     <>
+      <div className="header-wrapper">
+        <div className='icon-wrapper'>
+          <img src="./1xbet.png"></img>
+        </div>
+        <div className="date"></div>
+      </div>
       <div className="image-container">
         <div className="column">
           <img src="https://source.unsplash.com/gYl-UtwNg_I/1500x1500"/>
