@@ -1,13 +1,16 @@
 import './App.css';
+import { format } from 'date-fns'
+
 
 function App() {
+  let date = format(new Date(), 'MM/dd/yyyy')
   return (
     <>
       <div className="header-wrapper">
         <div className='icon-wrapper'>
           <img src="./1xbet.png"></img>
         </div>
-        <div className="date"></div>
+        <div className="date">{date}</div>
       </div>
       <div className="image-container">
         <div className="column">
