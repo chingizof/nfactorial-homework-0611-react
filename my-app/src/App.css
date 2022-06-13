@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+}
+
+.image-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0
+}
+
+.column {
+  float: left;
+  width: 20%;
+  position: relative;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+  }
+  
+  .image-container {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .column {
+    float: none;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
